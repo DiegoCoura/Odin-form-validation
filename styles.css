@@ -1,0 +1,178 @@
+*:focus {
+    outline: none !important;
+  }
+  
+  @font-face {
+    font-family: odinFont;
+    src: url("./public/Norse-Bold.otf");
+  }
+  
+  html {
+    background-color: black;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  
+  h2 {
+    font-weight: 500;
+  }
+  
+  .main-container {
+    display: flex;
+    height: 98vh;
+  }
+  
+  .banner-container {
+    background-image: url("./public/halie-west-25xggax4bSA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10.6rem;
+  }
+  
+  .odin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 15px 0;
+  }
+  
+  .odin-container-bg {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 0;
+    position: absolute;
+    filter: blur(0.5px);
+  }
+  
+  .odin-logo {
+    height: 120px;
+    z-index: 1;
+    margin: 0;
+  }
+  
+  .odin-title {
+    font-family: odinFont;
+    font-size: 6rem;
+    color: white;
+    z-index: 1;
+    margin: 0;
+  }
+  
+  .right-container {
+    background-color: rgb(247 247 247);
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+  
+  .title {
+    padding: 0 40px;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 0 40px;
+    box-shadow: 0px 2px 4px 0px #cccbcb;
+  }
+  
+  .form-container h2 {
+    position: relative;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    height: 240px;
+    align-content: flex-start;
+    column-gap: 5rem;
+  }
+  
+  .input-control{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-control label {
+    font-size: 12px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  
+  .input-control input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  
+  .input-control input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 4px #adacac;
+  }
+  
+  .input-control input[type="password"]:invalid{
+    border-color: red;
+  }
+  
+  .input-control.success input{
+    border-color: #596d48;
+  }
+  
+  .input-control.error input{
+    border-color: #ff3860;  
+  }
+  
+  .message{
+    color: red;
+    font-size: .8rem;
+  }
+  
+  #form .login-block {
+    position: absolute;
+    margin-top: 270px;
+  }
+  
+  #form button {
+    background-color: #596d48;
+    color: white;
+    padding: 16px 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #adacac;
+  }
+  
+  #form button:active {
+    background-color: #768a65;
+    transform: translateY(2px);
+  }
+  
+  .login-block a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: 600;
+  }
+  
+  .errMessage{
+    font-size: .8rem;
+    color: red;
+  }

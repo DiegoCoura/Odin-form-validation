@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dida's Form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="banner-container">
+        <div class="odin-container">
+          <div class="odin-container-bg"></div>
+          <img
+            class="odin-logo"
+            src="./public/odin-lined.png"
+            alt="odin-logo"
+          />
+          <h1 class="odin-title">ODIN</h1>
+        </div>
+      </div>
+      <div class="right-container">
+        <h2 class="title">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+         
+          Sign up <em>now</em> to get started.<br />
+          You <em>know</em> you want to.
+        </h2>
+
+        <div class="form-container">
+          <div class="form-container-bg"></div>
+          <h2>Let's do this!</h2>
+
+          <form name="mainForm" action="#" method="post" id="form" novalidate>
+            <div class="input-control">
+              <label for="first_name">FIRST NAME</label>
+              <input
+                class="input-field"
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="input-control">
+              <label for="last_name">LAST NAME</label>
+              <input
+                class="input-field"
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="input-control">
+              <label for="user_email">EMAIL</label>
+              <input
+                title="must be a valid email address"
+                class="input-field"
+                type="email"
+                id="user_email"
+                name="user_email"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="input-control">
+              <label for="cell">PHONE NUMBER</label>
+              <input
+                class="input-field"
+                type="text"
+                inputmode="numeric"
+                id="cell"
+                name="cell"
+                autocomplete="off"
+                minlength="8"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="input-control">
+              <label for="user_password">PASSWORD</label>
+              <input
+                title="Must be at least 8 characters"
+                class="input-field"
+                type="password"
+                id="user_password"
+                name="user_password"
+                pattern="[a-zA-Z0-9]{8,16}"
+                minlength="8"
+                maxlength="16"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="input-control">
+              <label for="confirm_passowrd">CONFIRM PASSWORD</label>
+              <input
+                title="Passwords do not match"
+                class="input-field"
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                minlength="8"
+                maxlength="16"
+                required
+              />
+              <span class="errMessage"></span>
+             
+            </div>
+
+            <div class="login-block">
+              <button type="submit">Create Account</button>
+              <p>
+                Already have an account?
+                <a class="login-link" href="">Log in</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="api.js"></script>
+  </body>
+</html>
